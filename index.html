@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Personal frontend developer portfolio showcasing skills, projects, and contact information."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-box">
+        <!-- Navigation -->
+        <nav class="navigation">
+          <ul class="nav-bar">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Open navigation menu"
+          >
+            &#9776;
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi, I'm a <span class="accent">Frontend Developer</span></h1>
+          <p class="lead">
+            I build accessible, responsive, and user-friendly web interfaces
+            using HTML, CSS, and JavaScript.
+          </p>
+          <a class="btn" href="#projects">Explore Work</a>
+          <a class="btn btn-outline" href="#contact">Contact Me</a>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="coding.png"
+            alt="Illustration of a developer coding on a laptop"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="me.jpg" alt="Frontend developer" />
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I am a frontend developer passionate about creating clean,
+            responsive, and accessible user interfaces. I enjoy transforming
+            ideas into polished and functional web experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <div class="progress">
+            <span class="progress-bar" style="width: 95%"></span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <div class="progress">
+            <span class="progress-bar" style="width: 90%"></span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <div class="progress">
+            <span class="progress-bar" style="width: 85%"></span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Git & GitHub</h3>
+          <div class="progress">
+            <span class="progress-bar" style="width: 70%"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+        <!-- Project 1: Pizza Menu -->
+        <article class="project-card">
+          <img src="funghi.jpg" alt="Pizza Menu Project" />
+          <div class="project-body">
+            <h3>Pizza Menu</h3>
+            <p>
+              A responsive pizza menu layout built with HTML and CSS, optimized
+              for mobile and desktop screens.
+            </p>
+            <div class="project-meta">
+              <span class="tag">Frontend</span>
+              <a
+                class="btn-sm"
+                href="https://anuoluwapofm.github.io/Pizza-Menu/"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Traveling List -->
+        <article class="project-card">
+          <img src="travel.png" alt="Traveling List Project" />
+          <div class="project-body">
+            <h3>Traveling List</h3>
+            <p>
+              A simple traveling checklist app to keep track of destinations and
+              items.
+            </p>
+            <div class="project-meta">
+              <span class="tag">Frontend</span>
+              <a
+                class="btn-sm"
+                href=" https://anuoluwapofm.github.io/Travel-list/"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </article>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact container">
+      <h2>Contact</h2>
+
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" required minlength="2" />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            minlength="10"
+          ></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-links">
+        <p>
+          GitHub:
+          <a href="https://github.com/Anuoluwapofm" target="_blank">
+            https://github.com/Anuoluwapofm
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          © <span id="year"></span> Frontend Developer Portfolio — Built with
+          HTML, CSS & JS
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile menu toggle
+      const menuToggle = document.getElementById("menu-toggle");
+      const navBar = document.querySelector(".nav-bar");
+
+      menuToggle.addEventListener("click", () => {
+        navBar.classList.toggle("open");
+      });
+    </script>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
