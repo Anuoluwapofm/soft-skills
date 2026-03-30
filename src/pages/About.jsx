@@ -91,7 +91,7 @@ const About = () => {
         <div className="flex flex-col items-center lg:items-end w-full">
           <div className="w-full max-w-[420px] aspect-square rounded-3xl overflow-hidden shadow-2xl mb-12">
             <img
-              src="/images/about_image.png"
+              src="images/about_image.png"
               alt="Profile"
               className="w-full h-full object-cover"
             />

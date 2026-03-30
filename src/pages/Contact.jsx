@@ -21,7 +21,7 @@ const Contact = () => {
               {/* IMAGE REPLACED EMOJI HERE */}
               <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center p-2 shadow-sm">
                 <img
-                  src="/images/gmail_icon.png"
+                  src="images/gmail_icon.png"
                   alt="Gmail"
                   className="w-full h-full object-contain"
                 />

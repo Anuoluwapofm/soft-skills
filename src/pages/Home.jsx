@@ -57,7 +57,7 @@ const Home = () => {
             <div className="absolute inset-0 rounded-full border-[5px] border-blue-800 z-10 shadow-lg shadow-blue-100"></div>
             <div className="absolute inset-2 rounded-full overflow-hidden bg-white z-20">
               <img
-                src="/images/hero_image.png"
+                src="images/hero_image.png"
                 alt="Mercy"
                 className="w-full h-full object-cover"
               />

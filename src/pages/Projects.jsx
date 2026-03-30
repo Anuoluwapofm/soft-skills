@@ -17,7 +17,7 @@ const Projects = () => {
       title: "Travel List App",
       description:
         "Mobile-responsive travel app for planning trips and discovering destinations.",
-      image: "/images/Travel_image.png",
+      image: "images/Travel_image.png",
       github: "https://github.com/Anuoluwapofm/Travel-list",
       live: "https://anuoluwapofm.github.io/Travel-list/",
     },
@@ -26,7 +26,7 @@ const Projects = () => {
       title: "MediTrack App",
       description:
         "A mobile app for tracking medication schedules and managing health information.",
-      image: "/images/splash_screen.png",
+      image: "images/splash_screen.png",
       github: "https://github.com/Anuoluwapofm/MediTrack",
       live: "https://anuoluwapofm.github.io/MediTrack/",
     },
@@ -57,17 +57,17 @@ const Projects = () => {
               {project.isPizzaProject ? (
                 <div className="relative w-full h-full flex items-center justify-center bg-orange-50/5">
                   <img
-                    src="/images/pizzas/margherita.jpg"
+                    src="images/pizzas/margherita.jpg"
                     className="w-28 h-28 rounded-full object-cover shadow-2xl animate-stroll z-20 border-4 border-[#222222]"
                     alt="pizza"
                   />
                   <img
-                    src="/images/pizzas/prosciutto.jpg"
+                    src="images/pizzas/prosciutto.jpg"
                     className="absolute top-6 left-6 w-16 h-16 rounded-full object-cover opacity-60 animate-stroll delay-1 z-10"
                     alt="pizza"
                   />
                   <img
-                    src="/images/pizzas/focaccia.jpg"
+                    src="images/pizzas/focaccia.jpg"
                     className="absolute bottom-6 right-6 w-20 h-20 rounded-full object-cover opacity-40 animate-stroll delay-2 z-10"
                     alt="pizza"
                   />
