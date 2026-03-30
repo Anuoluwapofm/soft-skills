@@ -18,10 +18,10 @@ const Contact = () => {
             </p>
 
             <div className="inline-flex items-center gap-4 p-6 bg-slate-50 rounded-[2rem] border border-slate-100 w-fit">
-              {/* IMAGE REPLACED EMOJI HERE */}
               <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center p-2 shadow-sm">
                 <img
-                  src="images/gmail_icon.png"
+                  /* UPDATED: Added Base URL for GitHub Pages */
+                  src={`${import.meta.env.BASE_URL}images/gmail_icon.png`}
                   alt="Gmail"
                   className="w-full h-full object-contain"
                 />

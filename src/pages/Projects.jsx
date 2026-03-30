@@ -9,7 +9,7 @@ const Projects = () => {
       description:
         "A simple web project for a pizza shop that lets users browse pizzas, customize their orders, and place them online.",
       isPizzaProject: true,
-      github: "https://github.com/Anuoluwapofm/Pizza-Menu", // Replace with your link
+      github: "https://github.com/Anuoluwapofm/Pizza-Menu",
       live: "https://anuoluwapofm.github.io/Pizza-Menu/",
     },
     {
@@ -17,7 +17,8 @@ const Projects = () => {
       title: "Travel List App",
       description:
         "Mobile-responsive travel app for planning trips and discovering destinations.",
-      image: "images/Travel_image.png",
+      // UPDATED PATH HERE
+      image: `${import.meta.env.BASE_URL}images/Travel_image.png`,
       github: "https://github.com/Anuoluwapofm/Travel-list",
       live: "https://anuoluwapofm.github.io/Travel-list/",
     },
@@ -26,12 +27,12 @@ const Projects = () => {
       title: "MediTrack App",
       description:
         "A mobile app for tracking medication schedules and managing health information.",
-      image: "images/splash_screen.png",
+      // UPDATED PATH HERE
+      image: `${import.meta.env.BASE_URL}images/splash_screen.png`,
       github: "https://github.com/Anuoluwapofm/MediTrack",
       live: "https://anuoluwapofm.github.io/MediTrack/",
     },
   ];
-
   return (
     <section
       id="projects"

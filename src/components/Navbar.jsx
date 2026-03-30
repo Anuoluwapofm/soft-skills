@@ -39,7 +39,8 @@ const Navbar = () => {
             <div className="absolute inset-0 rounded-full border-2 border-blue-600 z-10"></div>
             <div className="absolute inset-[2px] rounded-full overflow-hidden bg-slate-200 z-20">
               <img
-                src="images/hero_image.png"
+                /* UPDATED: Added Base URL for GitHub Pages */
+                src={`${import.meta.env.BASE_URL}images/hero_image.png`}
                 alt="Mercy Profile"
                 className="w-full h-full object-cover"
               />
